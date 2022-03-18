@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(rgb(191, 229, 255),rgb(255, 255, 255));
+}
+
+header{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+form{
+  text-align: center;
+  margin-bottom: 25px;
+
+  input{
+    border: none;
+    padding: 10px 5px;
+    outline: none;
+    background-color: #ffffff;
+  }
+
+  button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: #32cf3a;
+    color: white;
+  }
+}
+
+.sort{
+  text-align: center;
+  margin-bottom: 25px;
+
+  button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: #32cf3a;
+    color: white;
+  }
+}
+
+section{
+  text-align: center;
+  div{
+    margin: 10px;
+    animation-name: scaleUp;
+    animation-duration: 0.2s
+  }
+  div.done{
+    span{
+      text-decoration: line-through;
+      color: rgb(156, 156, 156);
+    }
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    color: white;
+  }
+  button.success{
+    margin-left: 15px;
+    background-color: #32cf3a;
+  }
+  button.delete{
+    background-color: #ff0e0e;
+  }
+}
+
+@keyframes scaleUp{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(0);
+  }
+}

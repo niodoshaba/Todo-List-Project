@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bfe5ff), to(white));
+  background: linear-gradient(#bfe5ff, white);
+}
+
+header {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+form input {
+  border: none;
+  padding: 10px 5px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+form button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: #32cf3a;
+  color: white;
+}
+
+.sort {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sort button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: #32cf3a;
+  color: white;
+}
+
+section {
+  text-align: center;
+}
+
+section div {
+  margin: 10px;
+  -webkit-animation-name: scaleUp;
+          animation-name: scaleUp;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+
+section div.done span {
+  text-decoration: line-through;
+  color: #9c9c9c;
+}
+
+section button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  color: white;
+}
+
+section button.success {
+  margin-left: 15px;
+  background-color: #32cf3a;
+}
+
+section button.delete {
+  background-color: #ff0e0e;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleOut {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
