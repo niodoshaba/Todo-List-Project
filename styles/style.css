@@ -77,7 +77,7 @@ section button {
   color: white;
 }
 
-section button.success {
+section button.success, section button.new-success {
   margin-left: 15px;
   background-color: #32cf3a;
 }

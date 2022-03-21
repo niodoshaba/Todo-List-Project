@@ -75,12 +75,12 @@ $("form button").click(function(e){
     <div class="todo-item">
       <span>${todotext}</span>
       <span>${month}/${day}</span>
-      <button class="success">O</button>
+      <button class="new-success">O</button>
       <button class="delete" data-delete-text="${todotext}">X</button>
     </div>
   `);
 
-  $(".success").click(function(){
+  $(".new-success").click(function(){
     if($(this).parent().hasClass("done")){
       $(this).parent().removeClass("done")
     }else{
